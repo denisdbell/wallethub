@@ -1,0 +1,29 @@
+#Test data
+//Table to store mixed case words
+CREATE TABLE `words` (
+`id` int(11) DEFAULT NULL,
+  `value` varchar(50) DEFAULT NULL
+) 
+ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+//Test Data
+INSERT INTO words VALUES(1,"united states");
+
+INSERT INTO words VALUES (2,"jamaiCA ");
+
+INSERT INTO words VALUES (3,"veZeuela");
+
+#Query executed
+
+SELECT id,initcap(value) FROM words
+
+
+#Result
+id	initcap(value)
+1	United States
+2	Jamaica 
+3	Vezeuela
+
+

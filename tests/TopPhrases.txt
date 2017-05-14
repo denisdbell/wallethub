@@ -1,0 +1,18 @@
+#Test Data
+    File: 
+         TopPhrases.txt
+    Contents:
+        Foobar Candy | Olympics 2012 | PGA | CNET | Microsoft Bing |
+        Microsoft Bing | Microsoft Bing | Microsoft Bing 
+        | Microsoft Bing | Microsoft Bing");
+		
+#Method executed
+javac TopPhrases.java
+java TopPhrases
+
+#Result (Console output)
+Phrase: Microsoft Bing Occured 6 Times
+Phrase: CNET Occured 1 Times
+Phrase: Foobar Candy Occured 1 Times
+Phrase: PGA Occured 1 Times
+Phrase: Olympics 2012 Occured 1 Times

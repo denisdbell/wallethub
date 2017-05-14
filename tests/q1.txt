@@ -1,0 +1,24 @@
+#Test Data
+//Create votes table
+CREATE TABLE votes ( name CHAR(10), votes INT );
+
+//Insert votes
+INSERT INTO votes VALUES
+ ('Smith',10), ('Jones',15), 
+('White',20), 
+('Black',40), 
+('Green',50), 
+('Brown',20);
+
+#Query executed
+SELECT *,   @curRank := @curRank + 1 AS rank FROM votes,
+(SELECT @curRank := 0) r order by votes DESC
+
+#Result
+name, votes, @curRank := 0, rank
+Green, 	50, 	0	      , 1
+Black, 	40, 	0	      , 2
+White, 	20, 	0	      , 3
+Brown, 	20, 	0	      , 4
+Jones, 	15, 	0	      , 5
+Smith, 	10, 	0	      , 6

@@ -1,0 +1,12 @@
+#Test Data
+{ "WOW", "Tomorrow", "TEST", "Insane" };
+
+#Method executed
+javac Palindrome.java
+java Palindrome
+
+#Result (Console output)
+WOW Is a palindrome
+Tomorrow Not a plaindrome 
+TEST Not a plaindrome 
+Insane Not a plaindrome

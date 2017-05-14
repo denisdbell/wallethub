@@ -1,0 +1,29 @@
+#Table data
+INSERT INTO sometbl VALUES (1, 'Smith'), 
+(2, 'Julio|Jones|Falcons'), 
+(3,'White|Snow'), 
+(4, 'Paint|It|Red'), 
+(5, 'Green|Lantern'), 
+(6, 'Brown|bag');
+
+#Query executed
+
+CALL parse;
+
+SELECT * FROM sometbl2 //This contains the split columns as rows;
+
+#Result
+
+2	Falcons
+2	Jones
+2	Julio
+3	Snow
+3	White
+4	Red
+4	It
+4	Paint
+5	Lantern
+5	Green
+6	bag
+6	Brown
+
